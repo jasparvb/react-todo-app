@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import NewTodoListForm from "./NewTodoListForm";
+import NewTodoForm from "./NewTodoForm";
 import { v4 as uuid } from "uuid";
 
 
@@ -28,7 +28,7 @@ function TodoList() {
 
   return (
     <div className="ShoppingList">
-      <NewTodoListForm addItem={addTodo} />
+      <NewTodoForm addTodo={addTodo} />
       {renderTodos()}
     </div>
   );
